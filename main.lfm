@@ -1,0 +1,37 @@
+object MainWin: TMainWin
+  Left = 149
+  Height = 196
+  Top = 250
+  Width = 296
+  BorderStyle = bsToolWindow
+  Caption = 'TorProxy Installer'
+  ClientHeight = 196
+  ClientWidth = 296
+  object Button1: TButton
+    Left = 88
+    Height = 25
+    Top = 8
+    Width = 131
+    Caption = 'Install Tor Proxy'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object LoggerMemo: TMemo
+    Left = 0
+    Height = 116
+    Top = 80
+    Width = 296
+    Align = alBottom
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Height = 20
+    Top = 48
+    Width = 296
+    Anchors = [akTop, akLeft, akRight]
+    TabOrder = 2
+  end
+end
